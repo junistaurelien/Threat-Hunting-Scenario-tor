@@ -178,7 +178,7 @@ DeviceNetworkEvents
 ---
 
 ---
-#Key Findings (TOR-ONLY) 
+Key Findings (TOR-ONLY) 
 Tor installer was executed silently (/S) by JBtest from Downloads.
 
 Tor Browser runtime executed from Tor Browser paths (firefox.exe) and started the Tor service (tor.exe).
