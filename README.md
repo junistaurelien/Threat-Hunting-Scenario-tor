@@ -250,3 +250,12 @@ Tor runtime (*\Tor Browser\Browser\firefox.exe and *\TorBrowser\Tor\tor.exe)
 Tor component network connections (initiated by tor.exe)
 
 ---
+Prepared By:
+
+Junist Aurelien
+2026-01-14
+
+Verified By:
+
+Junist Aurelien
+2026-01-14
