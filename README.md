@@ -61,13 +61,15 @@ DeviceFileEvents
   
 
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/71402e84-8767-44f8-908c-1805be31122d">
+<<p align="center">
+  <img src="Deviceevents21.png" alt="TOR installer process event" width="900">
+</p>
 
 ---
 
 ### 2. Searched the `DeviceProcessEvents` Table
 
-Searched for any `ProcessCommandLine` that contained the string "tor-browser-windows-x86_64-portable-15.0.1.exe". Based on the logs returned, at `2026-01-14T17:46:52.1979684Z`, an employee on the "threat-hunt-lab" device ran the file `tor-browser-windows-x86_64-portable-15.0.1.exe` from their Downloads folder, using a command that triggered a silent installation.
+Searched for any `ProcessCommandLine` that contained the string "tor-browser-windows-x86_64-portable-15.0.1.exe". Based on the logs returned, at `2026-01-14T17:46:52.1979684Z`, an employee on the "JB5" device ran the file `tor-browser-windows-x86_64-portable-15.0.1.exe` from their Downloads folder, using a command that triggered a silent installation.
 
 **Query used to locate event:**
 
@@ -78,7 +80,11 @@ DeviceProcessEvents
 | where ProcessCommandLine contains "tor-browser-windows"  
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b07ac4b4-9cb3-4834-8fac-9f5f29709d78">
+<p align="center">
+  <img src="./deviceprocessevents.png" alt="Firefox process events (DeviceProcessEvents)" width="900">
+</p>
+
+
 
 ---
 
@@ -95,7 +101,9 @@ DeviceProcessEvents
 | project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine  
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f">
+<p align="center">
+  <img src="./deviceprocessevents.png" alt="Firefox process events (DeviceProcessEvents)" width="900">
+</p>
 
 ---
 
@@ -115,7 +123,9 @@ DeviceNetworkEvents
 | order by Timestamp desc
 
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/87a02b5b-7d12-4f53-9255-f5e750d0e3cb">
+<p align="center">
+  <img src="./devicenetworkevents.png" alt="TOR network connections (DeviceNetworkEvents)" width="900">
+</p>
 
 ---
 
